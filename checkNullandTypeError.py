@@ -18,7 +18,7 @@ for i in range(0, COLNUM):
 def checkNotNumber(line, index):
 	result = False
 	if len(line[index]) == 0:
-		result = True
+		result = False
 	else:
 		s = line[index]
 		for character in s:
