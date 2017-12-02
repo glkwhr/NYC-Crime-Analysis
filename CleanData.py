@@ -37,6 +37,10 @@ def cleanBadData(line):
 	if len(line[13]) == 0 and len(line[14]) == 0:
 		return False
 
+	#Occur postition should not be NULL
+        if len(line[16]) == 0:
+                return False
+	
 	#Check lat/long
 	if len(line[21]) > 1 and len(line[22]) > 1:
 		if not (40.4<= float(line[21]) <= 40.93 and -74.35 <= float(line[22]) <= -73.69):
