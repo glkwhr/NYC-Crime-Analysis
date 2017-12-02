@@ -48,4 +48,4 @@ def cleanBadData(line):
 	return flag
 
 filtered = datatail.filter(cleanBadData)
-print(filtered.count())
+print("Invalid Record Number: "+str(datatail.count()-filtered.count()))
