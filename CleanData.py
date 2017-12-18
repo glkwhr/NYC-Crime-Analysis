@@ -29,7 +29,7 @@ def cleanBadData(line):
         if len(line[6]) == 0:
                 return False
 
-        #CRM_ATPT_CPTD_CD should not be NULL                                                                                                     55,1          Bot
+        #CRM_ATPT_CPTD_CD should not be NULL
 	if len(line[10]) == 0:
                 return False
 
