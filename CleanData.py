@@ -55,7 +55,7 @@ def cleanBadData(line):
         return flag
 
 def toCSVLine(line):
-        return ','.join(str(d) for d in line)
+        return '%'.join(str(d) for d in line)
 
 filtered = datatail.filter(cleanBadData)
 lines = filtered.map(toCSVLine)
