@@ -20,6 +20,10 @@ def cleanBadData(line):
         #Date should not be NULL
         if len(line[1]) == 0:
                 return False
+	
+	#Incident before 2006, ignore
+        if int(line[1][-4:]) < 2006:
+                return False
 
         #Report Date should not be NULL
         if len(line[5]) == 0:
