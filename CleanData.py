@@ -12,6 +12,9 @@ datatail = dataOriginal.filter(lambda x: x!=header)
 
 def cleanBadData(line):
         flag = True
+	
+	if line[0] == "CMPLNT_NUM":
+                return True
 
         #Complaint Number should not be NULL
         if len(line[0]) == 0:
