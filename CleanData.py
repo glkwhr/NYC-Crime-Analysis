@@ -7,8 +7,6 @@ COLNUM = 24
 
 csvfile = sc.textFile('crimedata.csv')
 dataOriginal = csvfile.mapPartitions(lambda line: csv.reader(line))
-header = dataOriginal.first()
-datatail = dataOriginal.filter(lambda x: x!=header)
 
 def cleanBadData(line):
         flag = True
@@ -57,6 +55,6 @@ def cleanBadData(line):
 def toCSVLine(line):
         return '%'.join(str(d) for d in line)
 
-filtered = datatail.filter(cleanBadData)
+filtered = dataOriginal.filter(cleanBadData)
 lines = filtered.map(toCSVLine)
 lines.saveAsTextFile('cleanedData.csv')
