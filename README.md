@@ -56,7 +56,7 @@ The following scripts assume that `cleanedData.csv` has been put in HDFS. To run
 
 - `keycode2desc.py`  
 	Associate incident code with its description.  
-	This script produces output file "keyCode2desc.csv".  
+	This script produces output file `keyCode2desc.csv`.  
 	Output data columns: (KY_CD, OFNS_DESC, COUNT)  
 
 - `kycdCount.py`  
@@ -71,7 +71,7 @@ The following scripts assume that `cleanedData.csv` has been put in HDFS. To run
 
 
 ### Data Visualization Scripts
-- `/GraphSave/index.html` and `/GraphSave/draw.js draw2.js ... draw5.js`  
+- `/GraphSave/index.html` and `/GraphSave/draw.js` `draw2.js` ... `draw5.js`  
 	These are used to draw the summary charts for report.  
 	You need to start a Python server to run these code.  
 	Notice that you have to manually modify the code in index.html to call different JS files.  
