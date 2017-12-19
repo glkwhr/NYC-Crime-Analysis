@@ -1,6 +1,13 @@
 # NYC-Crime-Analysis
 Big Data Analysis (CS-GY-9223) Course Project  
 
+## Content
+- [Members](user-content-members)
+- [Data Collection](user-content-data-collection)
+- [Part I: Data Cleaning](user-content-part-i-data-cleaning)
+- [Part II: Data Analysis](user-content-part-ii-data-analysis)
+- [How to Run Scripts](user-content-how-to-run-scripts)
+
 ## Members
 |hw1550         |jz2657         | xz1600|
 |:-------------:|:-------------:|:-----:|
