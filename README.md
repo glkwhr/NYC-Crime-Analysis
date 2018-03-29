@@ -1,5 +1,5 @@
 # NYC-Crime-Analysis
-Big Data Analysis (CS-GY-9223) Course Project  
+Big Data Analysis (CS-GY-9223) Course Project Report (Partial)
 
 ## Content
 - [Members](#members)
